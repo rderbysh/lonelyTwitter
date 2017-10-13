@@ -35,12 +35,16 @@ public class TweetList {
     }
 
     public Tweet getTweet(int index) {
+        return tweets.get(index);
+    }
+
+    public ArrayList<Tweet> getTweets() {
         Collections.sort(tweets, new Comparator<Tweet>() {
             public int compare(Tweet lhs, Tweet rhs) {
                 return lhs.getDate().compareTo(rhs.getDate());
             }
         });
-        return tweets.get(index);
+        return tweets;
     }
 
     public int getCount() {
