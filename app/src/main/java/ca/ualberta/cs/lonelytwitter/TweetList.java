@@ -2,15 +2,19 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.ArrayList;
 
-public class TweetList {
-    private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
+
+// Made it package private
+class TweetList {
+    // Added a final modifier to tweets list.
+    private final ArrayList<Tweet> tweets = new ArrayList<Tweet>();
 
     public TweetList(){
 
     }
 
-    public Tweet getTweet(int index){
-        return tweets.get(index);
+    // paramter of index is always 0, so don't need to put index in it.
+    public Tweet getTweet(){
+        return tweets.get(0);
     }
 
     public boolean hasTweet(Tweet tweet){

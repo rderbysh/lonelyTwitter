@@ -3,9 +3,13 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
 
-public interface Tweetable {
-    public String getMessage();
+// Made the interface package-private
+interface Tweetable {
 
-    public Date getDate();
+    // Removed the unnecessary public in front of the interface modifier
+    String getMessage();
+
+    // Removed the unnecessary public in front of the interface modifier
+    Date getDate();
 
 }

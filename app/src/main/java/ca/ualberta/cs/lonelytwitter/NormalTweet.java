@@ -1,6 +1,7 @@
 package ca.ualberta.cs.lonelytwitter;
 
-public class NormalTweet extends Tweet {
+// Made it package-private
+class NormalTweet extends Tweet {
 
     public NormalTweet(String message) {
         super(message);
